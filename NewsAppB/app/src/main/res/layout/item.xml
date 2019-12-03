@@ -16,7 +16,8 @@
             android:id="@+id/imagem_artigo"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@color/cardview_dark_background"/>
+            android:background="@color/cardview_dark_background"
+            android:scaleType="fitXY"/>
         
         <LinearLayout
             android:layout_width="match_parent"

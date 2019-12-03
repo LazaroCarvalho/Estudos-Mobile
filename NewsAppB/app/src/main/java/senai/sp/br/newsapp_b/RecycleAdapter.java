@@ -1,5 +1,6 @@
 package senai.sp.br.newsapp_b;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -29,11 +30,20 @@ public class RecycleAdapter
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderFeed holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolderFeed holder, int position) {
 
-        Article artigo = artigos.get(position);
+        final Article artigo = artigos.get(position);
         holder.tituloArtigo.setText(artigo.getTitle());
         holder.descricaoArtigo.setText(artigo.getAuthor());
+        new DownloadImageTask(holder.imagemArtigo).execute(artigo.getEnclosure().getUrl());
+
+        holder.btnLerArtigo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent abrirNavegador = new Intent(Intent.ACTION_VIEW, artigo.getSource());
+                holder.itemView.getContext().startActivity(abrirNavegador);
+            }
+        });
 
     }
 
