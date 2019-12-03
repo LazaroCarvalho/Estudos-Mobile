@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Home"
+            android:icon="@drawable/ic_home"/>
+
+        <item android:title="Subscribe Categories"
+            android:icon="@drawable/ic_categorias"/>
+
+    </group>
+
+    <item android:title="Related News">
+
+        <menu>
+
+            <item android:title="Editor Picked News"
+                android:icon="@drawable/ic_editor"/>
+
+            <item android:title="Trending News"
+                android:icon="@drawable/ic_trending"/>
+
+            <item android:title="Recent News"
+                android:icon="@drawable/ic_recent"/>
+
+            <item android:title="Search News"
+                android:icon="@drawable/ic_search"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="User Info">
+        <menu>
+
+        </menu>
+    </item>
+
+</menu>

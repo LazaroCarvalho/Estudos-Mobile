@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/entrar"
+        android:title="Entrar no sistema"
+        android:icon="@drawable/ic_sistema"/>
+
+    <item
+        android:id="@+id/faq"
+        android:title="FAQ"
+        android:icon="@drawable/ic_faq"/>
+
+    <item
+        android:id="@+id/termos"
+        android:title="Termos de Uso"
+        android:icon="@drawable/ic_termos"/>
+
+</menu>
